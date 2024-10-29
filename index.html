@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 3</title>
+  <!-- Tailwind and DaisyUI CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Custom Colours -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            grey1: "#E9E9E9",
+            grey3: "#A0A0A0",
+            grey4: "#737373",
+            grey5: "#494949",
+            grey6: "#212121",
+            grey7: "#1C1C1C",
+            green1: "rgb(171, 239, 95)",
+          },
+        },
+      },
+    };
+  </script>
+  <!-- Custom Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <style>
+    .manrope-font {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  </style>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/13331f68aa.js" crossorigin="anonymous"></script>
+</head>
+<body class="manrope-font">
+  <header class="lg:px-36 bg-[#f8f8f8]">
+    <nav class="">
+      <div class="navbar">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a class="text-grey4 font-extrabold">Home</a></li>
+              <li><a class="text-grey4 font-normal">Services</a></li>
+              <li><a class="text-grey4 font-normal">Portfolio</a></li>
+              <li><a class="text-grey4 font-normal">Blogs</a></li>
+              <li><a class="text-grey4 font-normal">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="bg-green1 p-1.5 rounded-[100%]"><i class="fa-solid fa-arrow-right-long -rotate-45"></i></div>
+          <h1 class="text-3xl font-extrabold ml-2">Rinterio</h1>
+          
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-grey4 font-extrabold">Home</a></li>
+            <li><a class="text-grey4 font-normal">Services</a></li>
+            <li><a class="text-grey4 font-normal">Portfolio</a></li>
+            <li><a class="text-grey4 font-normal">Blogs</a></li>
+            <li><a class="text-grey4 font-normal">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <button class="btn bg-white btn-circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </button>
+          <div class="flex-none mx-1">
+            <div class="dropdown dropdown-end">
+              <div tabindex="0" role="button" class="btn bg-white btn-circle">
+                <div class="indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                </div>
+              </div>
+              <div
+                tabindex="0"
+                class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
+                <div class="card-body">
+                  <span class="text-lg font-bold">0 Items</span>
+                  <span class="text-info">Subtotal: $0</span>
+                  <div class="card-actions">
+                    <button class="btn btn-primary btn-block">View cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="btn rounded-full bg-green1">Book Consult <div class="bg-black p-1.5 rounded-[100%]"><i class="fa-solid fa-arrow-right-long -rotate-45 text-white"></i></div></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="lg:px-36"></main>
+  <footer class="lg:px-36"></footer>
+</body>
+</html>
