@@ -43,10 +43,24 @@
   <script src="https://kit.fontawesome.com/13331f68aa.js" crossorigin="anonymous"></script>
 </head>
 <body class="manrope-font">
-  <header class="lg:px-36 bg-[#f8f8f8]">
+  <header class="px-5 lg:px-36 bg-[#f8f8f8]">
     <nav class="">
       <div class="navbar">
         <div class="navbar-start">
+          <div class="bg-green1 p-1.5 rounded-[100%]"><i class="fa-solid fa-arrow-right-long -rotate-45"></i></div>
+          <h1 class="text-3xl font-extrabold ml-2">Rinterio</h1>
+          
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-grey4 font-extrabold">Home</a></li>
+            <li><a class="text-grey4 font-normal">Services</a></li>
+            <li><a class="text-grey4 font-normal">Portfolio</a></li>
+            <li><a class="text-grey4 font-normal">Blogs</a></li>
+            <li><a class="text-grey4 font-normal">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
               <svg
@@ -64,7 +78,7 @@
             </div>
             <ul
               tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              class="menu menu-sm dropdown-content right-[15%] bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
               <li><a class="text-grey4 font-extrabold">Home</a></li>
               <li><a class="text-grey4 font-normal">Services</a></li>
               <li><a class="text-grey4 font-normal">Portfolio</a></li>
@@ -72,21 +86,7 @@
               <li><a class="text-grey4 font-normal">Contact Us</a></li>
             </ul>
           </div>
-          <div class="bg-green1 p-1.5 rounded-[100%]"><i class="fa-solid fa-arrow-right-long -rotate-45"></i></div>
-          <h1 class="text-3xl font-extrabold ml-2">Rinterio</h1>
-          
-        </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li><a class="text-grey4 font-extrabold">Home</a></li>
-            <li><a class="text-grey4 font-normal">Services</a></li>
-            <li><a class="text-grey4 font-normal">Portfolio</a></li>
-            <li><a class="text-grey4 font-normal">Blogs</a></li>
-            <li><a class="text-grey4 font-normal">Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="navbar-end">
-          <button class="btn bg-white btn-circle">
+          <button class="hidden lg:flex btn bg-white btn-circle">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-5 w-5"
@@ -100,7 +100,7 @@
                 d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
           </button>
-          <div class="flex-none mx-1">
+          <div class="hidden lg:flex flex-none mx-1">
             <div class="dropdown dropdown-end">
               <div tabindex="0" role="button" class="btn bg-white btn-circle">
                 <div class="indicator">
@@ -131,18 +131,18 @@
               </div>
             </div>
           </div>
-          <a class="btn rounded-full bg-green1">Book Consult <div class="bg-black p-1.5 rounded-[100%]"><i class="fa-solid fa-arrow-right-long -rotate-45 text-white"></i></div></a>
+          <a class="hidden lg:flex btn rounded-full bg-green1">Book Consult <div class="bg-black p-1.5 rounded-[100%]"><i class="fa-solid fa-arrow-right-long -rotate-45 text-white"></i></div></a>
         </div>
       </div>
     </nav>
   </header>
   <main>
-    <section class="bg-[#f8f8f8] lg:px-36 pt-6 pb-24">
+    <section class="bg-[#f8f8f8] px-5 lg:px-36 pt-6 pb-24">
       <div class="hero">
-        <div class="hero-content  text-center">
+        <div class="hero-content  text-center p-0">
           <div class="lg:w-[90%]">
             <img class="mx-auto" src="assets/banner.png" alt="">
-            <h1 class="text-7xl font-extrabold">A barn house of this design has a striking appearance</h1>
+            <h1 class="mt-4 text-3xl lg:text-7xl font-extrabold">A barn house of this design has a striking appearance</h1>
             <p class="py-6">
             The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
             </p>
@@ -151,7 +151,7 @@
         </div>
       </div>
     </section>
-    <section class="bg-grey1 lg:px-36g py-24 mb-24">
+    <section class="bg-grey1 px-5 lg:px-36g py-24 pb-24">
       <div class="hero mb-24     ">
         <div class="hero-content gap-9 flex-col-reverse lg:flex-row-reverse">
           <img
@@ -232,7 +232,7 @@
         </div>
       </div>
     </section>
-    <section class="lg:px-36 mb-24">
+    <section class="bg-grey1 lg:bg-white px-5 lg:px-36 pb-24">
       <div class="hero">
         <div class="hero-content text-center">
           <div class="flex flex-col items-center">
@@ -242,7 +242,7 @@
               The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
             </p>
             <div class="grid grid-cols-1 lg:grid-cols-5 gap-6">
-              <div class="card justify-center items-center card-side bg-base-100 col-span-3 p-6 rounded-2xl border border-[#eeeeee]" >
+              <div class="card flex-col lg:flex-row justify-center items-center card-side bg-base-100 lg:col-span-3 p-6 rounded-2xl border border-[#eeeeee]" >
                 
                 <img class="h-44" src="assets/img1.png"/>
                 <div class="card-body">
@@ -251,7 +251,7 @@
                   <div class="w-fit"><h2 class="btn bg-transparent border-none">View Details <div class="bg-green1 p-1.5 rounded-[100%]"><i class="fa-solid fa-arrow-right-long -rotate-45"></i></div></h2></div>
                 </div>
               </div>
-              <div class="card justify-center items-center card-side bg-base-100 col-span-2 p-6 rounded-2xl border border-[#eeeeee]" >
+              <div class="card justify-center items-center card-side bg-base-100 lg:col-span-2 p-6 rounded-2xl border border-[#eeeeee]" >
                 
                 <img class="h-44" src="assets/img2.png"/>
                 
@@ -259,7 +259,7 @@
               <div class="card justify-center items-center card-side bg-base-100 p-6 rounded-2xl border border-[#eeeeee]" >
                 <img class="h-44" src="assets/img3.png"/>
               </div>
-              <div class="card h-fit justify-center items-center card-side bg-base-100 p-6 col-span-3 rounded-2xl border border-[#eeeeee]" >
+              <div class="card flex-col lg:flex-row h-fit justify-center items-center card-side bg-base-100 p-6 lg:col-span-3 rounded-2xl border border-[#eeeeee]" >
                 
                 <img class="h-44" src="assets/img4.png"/>
                 <div class="card-body">
@@ -276,7 +276,7 @@
         </div>
       </div>
     </section>
-    <section class="lg:px-36 mb-24">
+    <section class="bg-grey1 lg:bg-white px-5 lg:px-36 pb-24">
       <div class="hero ">
         <div class="hero-content text-center">
           <div class="">
@@ -285,12 +285,12 @@
               Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
               quasi. In deleniti eaque aut repudiandae et a id nisi.
             </p>
-            <div class="carousel w-full h-screen">
+            <div class="carousel w-full lg:h-screen">
               <div id="slide1" class="carousel-item relative w-full h-full">
                 <img
                   src="assets/slide1.png"
                   class="w-full" />
-                <button class="btn rounded-full bg-green1 absolute top-[93%] left-[50%] font-extrabold">Buy Now <div class="bg-black p-1.5 rounded-[100%]"><i class="fa-solid fa-arrow-right-long -rotate-45 text-white"></i></div></button>
+                <button class="btn rounded-full bg-green1 absolute top-[85%] lg:top-[93%] left-[35%] lg:left-[50%] font-extrabold">Buy Now <div class="bg-black p-1.5 rounded-[100%]"><i class="fa-solid fa-arrow-right-long -rotate-45 text-white"></i></div></button>
                 <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                   <a href="#slide4" class="btn btn-circle">❮</a>
                   <a href="#slide2" class="btn btn-circle">❯</a>
@@ -300,7 +300,7 @@
                 <img
                   src="assets/slide2.jpg"
                   class="w-full h-full" />
-                <button class="btn rounded-full bg-green1 absolute top-[93%] left-[50%] font-extrabold">Buy Now <div class="bg-black p-1.5 rounded-[100%]"><i class="fa-solid fa-arrow-right-long -rotate-45 text-white"></i></div></button>
+                <button class="btn rounded-full bg-green1 absolute top-[85%] lg:top-[93%] left-[35%] lg:left-[50%] font-extrabold">Buy Now <div class="bg-black p-1.5 rounded-[100%]"><i class="fa-solid fa-arrow-right-long -rotate-45 text-white"></i></div></button>
                 <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                   <a href="#slide1" class="btn btn-circle">❮</a>
                   <a href="#slide3" class="btn btn-circle">❯</a>
@@ -310,7 +310,7 @@
                 <img
                   src="assets/slide3.jpg"
                   class="w-full h-full" />
-                <button class="btn rounded-full bg-green1 absolute top-[93%] left-[50%] font-extrabold">Buy Now <div class="bg-black p-1.5 rounded-[100%]"><i class="fa-solid fa-arrow-right-long -rotate-45 text-white"></i></div></button>
+                <button class="btn rounded-full bg-green1 absolute top-[85%] lg:top-[93%] left-[35%] lg:left-[50%] font-extrabold">Buy Now <div class="bg-black p-1.5 rounded-[100%]"><i class="fa-solid fa-arrow-right-long -rotate-45 text-white"></i></div></button>
                 <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                   <a href="#slide2" class="btn btn-circle">❮</a>
                   <a href="#slide4" class="btn btn-circle">❯</a>
@@ -320,7 +320,7 @@
                 <img
                   src="assets/slide4.jpg"
                   class="w-full h-full" />
-                <button class="btn rounded-full bg-green1 absolute top-[93%] left-[50%] font-extrabold">Buy Now <div class="bg-black p-1.5 rounded-[100%]"><i class="fa-solid fa-arrow-right-long -rotate-45 text-white"></i></div></button>
+                <button class="btn rounded-full bg-green1 absolute top-[85%] lg:top-[93%] left-[35%] lg:left-[50%] font-extrabold">Buy Now <div class="bg-black p-1.5 rounded-[100%]"><i class="fa-solid fa-arrow-right-long -rotate-45 text-white"></i></div></button>
                 <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                   <a href="#slide3" class="btn btn-circle">❮</a>
                   <a href="#slide1" class="btn btn-circle">❯</a>
@@ -331,7 +331,7 @@
         </div>
       </div>
     </section>
-    <section class="lg:px-36 lg:py-24 bg-[url('assets/bg.jpg')]">
+    <section class="px-5 py-8 lg:px-36 lg:py-24 bg-[url('assets/bg.jpg')]">
       <div class="hero">
         <div class="hero-content text-center w-full">
           <div class="flex flex-col items-center w-full">
@@ -340,27 +340,27 @@
             <p class="py-6 lg:w-[50%] mb-8">
               The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
             </p>
-            <div class="grid grid-cols-1 lg:grid-cols-4 lg:grid-rows-6 gap-6 w-full">
-              <div class="col-span-2"><input class="w-full input" type="text" placeholder="First Name*" required></div>
-              <div class="col-span-2"><input class="w-full input" type="text" placeholder="Last Name*" required></div>
-              <div class="col-span-2"><input class="w-full input" type="number" placeholder="Phone Number*" required></div>
-              <div class="col-span-2"><input class="w-full input" type="email" placeholder="Email*" required></div>
-              <div class="col-span-4 row-span-3"><textarea class="textarea textarea-bordered w-full h-full" placeholder="Write your message here"></textarea></div>
-              <div class="col-span-4"><button class="btn rounded-full bg-green1 text-black w-full font-extrabold text-xl">Send Mail <div class="bg-black aspect-square font-thin p-1.5 rounded-[100%]"><i class="fa-solid fa-arrow-right-long -rotate-45 text-white"></i></div></button></div>
+            <div class="grid grid-rows-8 grid-cols-1 lg:grid-cols-4 lg:grid-rows-6 gap-6 w-full">
+              <div class="lg:col-span-2"><input class="w-full input" type="text" placeholder="First Name*" required></div>
+              <div class="lg:col-span-2"><input class="w-full input" type="text" placeholder="Last Name*" required></div>
+              <div class="lg:col-span-2"><input class="w-full input" type="number" placeholder="Phone Number*" required></div>
+              <div class="lg:col-span-2"><input class="w-full input" type="email" placeholder="Email*" required></div>
+              <div class="lg:col-span-4 row-span-3"><textarea class="textarea textarea-bordered w-full h-full" placeholder="Write your message here"></textarea></div>
+              <div class="lg:col-span-4"><button class="btn rounded-full bg-green1 text-black w-full font-extrabold text-xl">Send Mail <div class="bg-black aspect-square font-thin p-1.5 rounded-[100%]"><i class="fa-solid fa-arrow-right-long -rotate-45 text-white"></i></div></button></div>
             </div>
           </div>
         </div>
       </div>
     </section>
   </main>
-  <footer class="footer footer-center bg-grey7 p-10">
+  <footer class="px-5 py-20 footer footer-center bg-grey7 lg:p-10">
     
-    <div class="w-1/2 flex justify-center">
+    <div class="lg:w-1/2 flex justify-center">
       <div class="bg-green1 p-1.5 rounded-[100%]"><i class="fa-solid fa-arrow-right-long -rotate-45"></i></div>
       <h1 class="text-3xl font-extrabold ml-2 text-white"> Rinterio</h1>
     </div>
     <p class="text-grey4 font-medium lg:w-[35%]">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
-    <ul class="flex text-grey1 font-medium gap-32">
+    <ul class="flex flex-col lg:flex-row text-grey1 font-medium gap-8 lg:gap-32">
       <li>Home</li>
       <li>Services</li>
       <li>Portfolio</li>
